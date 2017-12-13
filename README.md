@@ -1,6 +1,6 @@
 # Competitor Pattern
 
-## Donde surje
+## Donde surje
 
 Dada una colección de elementos queremos reducirla ([reduce]() - [PF](PF)) a un único elemento de la colección buscando:
 - La lógica de la selección es potestad de los elementos.
@@ -32,6 +32,6 @@ public static int getInconsistencyValue(Environmet env) {
 
 ## Alternativa
 
-[Competitor Pattern ][1]
+[Wiki][1]
 
-[1]:.
+[1]: https://github.com/diegosanchez/competitor_pattern/wiki
