@@ -10,8 +10,4 @@ public class Bar implements Competitor {
         return another;
     }
 
-    public boolean equals(Object another ) {
-        return this.getClass().equals(another.getClass() );
-    }
-
 }

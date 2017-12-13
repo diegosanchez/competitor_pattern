@@ -5,7 +5,7 @@ import com.fiuba.app.Competitor;
 /**
  * Created by dsanchez on 12/13/17.
  */
-public class NullEntity implements DomainEntity, Competitor {
+public class NullEntity implements Competitor {
     public Competitor challenge(Competitor another) {
         return another;
     }
