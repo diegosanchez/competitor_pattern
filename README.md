@@ -30,6 +30,12 @@ public static int getInconsistencyValue(Environmet env) {
 }
 ```
 
+### Ejecutar projecto en java
+
+1. Clonar repositorio: ```git clone git@github.com:diegosanchez/competitor_pattern.git```
+2. Ejecución de cobertura: ```mvn cobertura:cobertura```
+3. Ver reporte: ```open target/site/cobertura/index.html```
+
 ## Alternativa
 
 [Wiki][1]
