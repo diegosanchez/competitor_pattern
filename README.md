@@ -10,6 +10,9 @@ Código a partir del cuál salimos en búsqueda de la mejora:
 
 ```java
 public static int getInconsistencyValue(Environmet env) {
+    NoneInconsistency none = null NoneInconsistency();
+    Inconsistency inconsistency = null;
+    
     Inconsistency inconsistencies[] = {
             new OnlyCanBeSent( env ),
             new CantSentXunits( env ),
@@ -26,7 +29,6 @@ public static int getInconsistencyValue(Environmet env) {
     };
 
     return inconsistency.getNumber();
-
 }
 ```
 
