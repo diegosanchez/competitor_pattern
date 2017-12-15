@@ -3,8 +3,8 @@
 ## Donde surje
 
 Dada una colección de elementos queremos reducirla ([reduce]() - [PF](PF)) a un único elemento de la colección buscando:
-- La lógica de la selección es potestad de los elementos.
-- Evitar la utilización del ```if``` debido a como afecta negativamente la métrica de cobertura.
+- La lógica de la selección o la política por la cuál un elemento prevalece es potestad de este (OnlyCanBeSent, CantSentXunits, etc).
+- Evitar la utilización del ```if``` debido a como afecta negativamente la métrica de cobertura (ver [aquí](https://github.com/diegosanchez/competitor_pattern/wiki/Sin-Patron) los efectos negativos)
 
 Código a partir del cuál salimos en búsqueda de la mejora:
 
