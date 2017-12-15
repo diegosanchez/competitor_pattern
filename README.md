@@ -9,37 +9,39 @@ Dada una colección de elementos queremos reducirla ([reduce]() - [PF](PF)) a un
 Código a partir del cuál salimos en búsqueda de la mejora:
 
 ```java
-public static int getInconsistencyValue(Environmet env) {
-    NoneInconsistency none = null NoneInconsistency();
-    Inconsistency inconsistency = null;
-    
-    Inconsistency inconsistencies[] = {
-            new OnlyCanBeSent( env ),
-            new CantSentXunits( env ),
-            new AgreeAgree( env ),
-            new OnlyToAgree( env ),
-            new OnlyPuis( env )
-    };
+public Entity winner() {
+    Entity result = null;
 
-    for( Inconsistency i : inconsistencies) {
-        if ( !i.happens().equals( none ) ) {
-            inconsistency = i;
+    for( Entity e : this.entities) {
+        if ( e.happens() ) {
+            result = e;
             break;
         }
-    };
+    }
 
-    return inconsistency.getNumber();
-}
+    if ( result == null ) {
+        result = new NullLeakEntity();
+    }
+
+    return result;
+};
 ```
 
-### Ejecutar projecto en java
+## Qué efectos negativos tiene este fragmente de código (snippet of code) en la calidad?
 
-1. Clonar repositorio: ```git clone git@github.com:diegosanchez/competitor_pattern.git```
-2. Ejecución de cobertura: ```mvn cobertura:cobertura```
-3. Ver reporte: ```open target/site/cobertura/index.html```
+![cobertura][cobertura]
+
 
 ## Alternativa
 
 [Wiki][1]
 
+## Ejecutar projecto en java
+
+1. Clonar repositorio: ```git clone git@github.com:diegosanchez/competitor_pattern.git```
+2. Ejecución de cobertura: ```mvn cobertura:cobertura```
+3. Ver reporte: ```open target/site/cobertura/index.html```
+
+
 [1]: https://github.com/diegosanchez/competitor_pattern/wiki
+[cobertura]: https://raw.githubusercontent.com/wiki/diegosanchez/competitor_pattern/without_pattern/java_coverage.png
