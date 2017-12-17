@@ -1,8 +1,6 @@
-package com.fiuba.app;
+package com.fiuba.app.reduce;
 
-import com.fiuba.app.reduce.EntityBar;
-import com.fiuba.app.reduce.EntityCollection;
-import com.fiuba.app.reduce.EntityFoo;
+import com.fiuba.app.Competitor;
 import junit.framework.TestCase;
 
 /**

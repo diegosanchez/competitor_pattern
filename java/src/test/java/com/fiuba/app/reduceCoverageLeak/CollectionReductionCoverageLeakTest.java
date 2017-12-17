@@ -1,10 +1,6 @@
-package com.fiuba.app;
+package com.fiuba.app.reduceCoverageLeak;
 
 
-import com.fiuba.app.reduceCoverageLeak.Entity;
-import com.fiuba.app.reduceCoverageLeak.EntityBiz;
-import com.fiuba.app.reduceCoverageLeak.EntityLeakCollection;
-import com.fiuba.app.reduceCoverageLeak.EntityQux;
 import junit.framework.TestCase;
 
 /**

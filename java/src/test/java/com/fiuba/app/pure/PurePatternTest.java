@@ -1,7 +1,6 @@
-package com.fiuba.app;
+package com.fiuba.app.pure;
 
-import com.fiuba.app.pure.Bar;
-import com.fiuba.app.pure.Foo;
+import com.fiuba.app.Competitor;
 import junit.framework.TestCase;
 
 /**
