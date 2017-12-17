@@ -8,6 +8,7 @@ import com.fiuba.app.Competitor;
 public class EntityFoo implements Competitor {
 
     public Competitor challenge(Competitor another) {
+        // It allways prevails
         return this;
     }
 

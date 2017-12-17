@@ -15,11 +15,12 @@ public class EntityCollection {
     }
 
     public Competitor winner() {
-        return this.competitors
-                .stream()
-                .reduce(new NullEntity(), (Competitor a, Competitor b) -> {
-                    return a.challenge(b);
-                });
+        Competitor result = new NullEntity();
 
+        for( Competitor c : this.competitors) {
+            result = result.challenge(c);
+        }
+
+        return result;
     };
 }

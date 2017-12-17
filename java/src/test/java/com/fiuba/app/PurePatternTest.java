@@ -11,7 +11,7 @@ public class PurePatternTest
     extends TestCase
 {
 
-    public void testFooAllwayasPravailsOverBar()
+    public void testFooAlwayasPrevailsOverBar()
     {
         Competitor foo = new Foo();
         Competitor bar = new Bar();
